@@ -1,0 +1,60 @@
+body {
+    background-image: url(bg-roses.jpg);
+    padding: 1rem;
+}
+
+.logo {
+    max-width: 200px;
+    min-width: none;
+    
+}
+
+header {
+    text-align: start;
+    font-family: fantasy;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    
+}
+
+#multiroses {
+   width: 300px;
+   height: 400px;
+}
+
+.cover {
+    object-fit: contain;
+}
+
+#multiroses, #yel, #tul, #low {
+    border: 5px solid lightpink;
+}
+
+.swap {
+    padding-right: 1rem;
+}
+
+@media  screen and (min-width:1000px) {
+    body {
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width:999px) {
+    body {
+        background-size: contain;
+    }
+    div {
+        display: block;
+        max-width: fit-content;
+    }
+    
+    #multiroses {
+        max-width: fit-content;
+    }
+}

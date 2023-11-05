@@ -8,22 +8,33 @@
 </head>
 <body>
     <header> 
-        <h1>Visit Scott Monument</h1>
+        <img class="logo" src="rosesvg.svg" alt="black rose graphic">
+        <h1>Flower Power</h1>
     </header>
     <main>
-        <figure>
-            <img src="JPEG/scottsmall.jpg">
-                <figcaption>One of the most iconic landmarks in Edinburgh, Scotland, the Scott Monument is an architectural wonder dedicated to the Scottish writer Sir Walter Scott</figcaption>
-        </figure>
-        <figure>
-            <img src="JPEG/man.jpg">
-                <figcaption>George Meikle Kemp - the self-taught architect of the Scott Monument</figcaption>
-            </figure>
-            <p>Entering under a pseudonym, the design of self-taught architect George Meikle Kemp won by poplular vote. Construction began in 1840. Unfortunately, due to the dust from the stones, many of the masons died from working on the project. George Kemp himself also died before the project was completed, and the monument was brought to commpletion by his son.</p>
-
-        <img src="JPEG/glass.jpg">
-        <img src="JPEG/view.jpg">
-        
-    
+        <div>
+        <section class="cover">
+            <img id="multiroses" src="roses-cover.jpg" alt="multi-colored roses">
+        </section>
+        <section class="res-im">
+            <img id="yel" alt="yellow roses" srcset="yroses-s.jpg 300w,
+                        yroses-m.jpg 600w,
+                        yroses-l.jpg 1200w,
+                        yroses-xl.jpg 2000w"
+                        sizes="70vmin">
+        </section>
+        <section class="pict">
+            <picture>
+                <source srcset="tulips-p.jpg" media="(min-width: 600px)"/>
+                <img id="tul" src="tulips-l.jpg" alt="orange and purple tulips">
+            </picture>
+        </section>
+        <section class="swap">
+            <picture>
+                <source srcset="yellow-low.jpg" media="(min-width: 600px)"/>
+                <img id="low" src="yellow-hi.jpg" alt="yellow flowers">
+            </picture>
+        </section>
+    </div>
 </body>
 </html>
